@@ -1,7 +1,13 @@
-<div class="flex-1 bg-grey-lighter">
-  <div class="h-6 p-4">
+<div class="flex-1 bg-grey-lighter shadow-md z-40">
+  <div class="p-4">
     <h2>{{@project.title}}</h2>
 
     <PluginTags @plugins={{@project.plugins}} />
   </div>
+
+  <ul class="list-reset border-t border-y border-grey border-t-solid">
+    <li class="border-b border-grey border-b-solid p-2">Log</li>
+    <li class="border-b border-grey border-b-solid p-2">Node</li>
+    <li class="border-b border-grey border-b-solid p-2">Ember</li>
+  </ul>
 </div>
