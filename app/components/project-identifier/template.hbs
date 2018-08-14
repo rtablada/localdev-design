@@ -1,0 +1,15 @@
+<li class="h-16">
+  {{#link-to "project-detail" class="text-inherit no-underline"}}
+    {{#if @expanded}}
+    <div class="h-16 border-grey border-t-solid border-t bg-grey-lighter p-2">
+        <h2>{{@title}}</h2>
+
+        <PluginTags @plugins={{plugins}} />
+      </div>
+    {{else}}
+      <p class="h-12 flex items-center justify-center bg-grey-lighter m-2 rounded-full">
+        {{first-letter @title}}
+      </p>
+    {{/if}}
+  {{/link-to}}
+</li>

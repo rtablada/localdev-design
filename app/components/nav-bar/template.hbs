@@ -1,0 +1,11 @@
+<ul class="list-reset shadow-md z-10 {{if expanded 'flex-grow flex-shrink' 'flex-none'}} w-16 bg-purple flex flex-col">
+  <li class="h-16 bg-white">
+    <button class="h-16 bg-white w-full" onclick={{action (mut expanded) (not expanded)}}>Expand</button>
+  </li>
+
+  <ProjectIdentifier @expanded={{expanded}} @title="Ember App" @plugins={{array "node" "ember"}}/>
+  <ProjectIdentifier @expanded={{expanded}} @title="React App" @plugins={{array "node" "ember"}}/>
+  <ProjectIdentifier @expanded={{expanded}} @title="Vue App" @plugins={{array "node" "ember"}}/>
+  <ProjectIdentifier @expanded={{expanded}} @title="Node App" @plugins={{array "node" "ember"}}/>
+  <ProjectIdentifier @expanded={{expanded}} @title="MVC" @plugins={{array "node" "ember"}}/>
+</ul>

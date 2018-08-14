@@ -1,0 +1,5 @@
+<ul class="list-reset flex">
+  {{#each @plugins as |plugin index|}}
+    <li class="bg-orange rounded-full p-1 {{if index 'ml-2'}}">{{plugin}}</li>
+  {{/each}}
+</ul>
